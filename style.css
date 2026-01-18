@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -129,5 +129,150 @@ body {
 }
 
 .poster:hover {
-    transform: scale(1.1);
+    display: cursor;
+}
+/* --- Footer Styling --- */
+
+.main-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black; 
+}
+.cta-container {
+    text-align: center;
+    padding: 40px 0 60px 0;
+    color: white;
+}
+.cta-btn {
+    background-color: #e50914; 
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.footer {
+    padding-bottom: 20px;
+    color: #737373; 
+}
+.contact-link {
+    margin-bottom: 30px;
+}
+.footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer li {
+    margin-bottom: 12px;
+}
+
+.footer a {
+    color: #737373;
+    text-decoration: none;
+    font-size: 13px;
+}
+/* --- Hamburger Menu--- */
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none; 
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color:  white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .footer-links-wrapper {
+        flex-direction: column;
+    }
+    
+    .shop-grid {
+        grid-template-columns: 1fr; 
+    }
+    .search-bar{
+        display: none;
+    }
+}
+
+/* --- HAMBURGER MENU STYLES --- */
+
+/* 1. Hide the checkbox and hamburger icon by default (Desktop) */
+#menu-toggle, .hamburger {
+    display: none;
+}
+/* Responsive Design for Mobile */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .footer-links-wrapper {
+        flex-direction: column;
+    }
+    
+    .shop-grid {
+        grid-template-columns: 1fr; 
+    }
+    .search-bar{
+        display: none;
+    }
+}
+
+/* --- HAMBURGER MENU STYLES --- */
+
+/* 1. Hide the checkbox and hamburger icon by default (Desktop) */
+#menu-toggle, .hamburger {
+    display: none;
+}
+/* 2. Mobile Specific Styles (Break-point at 768px) */
+@media (max-width: 768px) {
+        .hamburger {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 5px;
+    }
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: black ;
+        padding: 20px;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        z-index: 100;
+        gap: 15px;
+    }
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
 }

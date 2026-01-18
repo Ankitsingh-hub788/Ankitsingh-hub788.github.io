@@ -7,17 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav class="navbar">
-        <div class="nav-left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="logo">
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">TV Shows</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">New & Popular</a></li>
-            </ul>
-        </div>
+<nav>
+   <div class="nav-left">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="logo">
+    
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </label>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">New & Popular</a></li>
+    </ul>
+</div>
         <div class="nav-right">
             <div class="profile-icon"></div>
         </div>
@@ -46,6 +52,58 @@
             <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=400" alt="Movie 6" class="poster">
         </div>
     </section>
+    <section class="row">
+    <h2 class="row-title">Netflix Originals</h2>
+    <div class="posters-container">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRx0Cb50jWu0y-9zh3XbuyVyibbwlSvWklZ5y2Iqj8eSfFPNAWk" alt="Movie 1" class="poster poster-large">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ64JkmUfdGCBr1Jh00cuQUTRAIU7wQ4Iw7gzHiswjBNrm7TDuT" alt="Movie 2" class="poster poster-large">
+        </div>
+</section>
+    <div class="main-container">
+        <div class="cta-container">
+            <button class="cta-btn">Get started</button>
+            <p>Create or restart your membership</p>
+        </div>
+
+        <footer class="footer">
+            <p class="contact-link">Questions? <a href="#">Contact us.</a></p>
+            
+            <div class="footer-cols">
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Ways to Watch</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                    <li><a href="#">Legal Notices</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Help Centre</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Only on Netflix</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Redeem gift cards</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Speed Test</a></li>
+                    <li><a href="#">Advert choices</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Media Centre</a></li>
+                    <li><a href="#">Buy gift cards</a></li>
+                    <li><a href="#">Cookie Preferences</a></li>
+                    <li><a href="#">Legal Guarantee</a></li>
+                </ul>
+            </div>
+
+          
+
+        </footer>
+    </div>
+
+
 
 </body>
 </html>
